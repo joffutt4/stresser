@@ -1,0 +1,53 @@
+<link rel="icon" type="image/png" href="/img/favicon.ico" />
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stresser.css">
+</head>
+
+<body class="fw-bg">
+    {{ template "header.html" .}}
+    <main>
+        <section class="container stress-input bg-white py-4">
+            <h3 class="mb-4 justify-content-center">Its stressing time.</h3>
+            <div class="mb-2">
+                <div class="row">
+                    <div class="col">
+                        <label for="url">Endpoint to test: </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input id="url" class="url-input" placeholder="http://google.com"></input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="users">Number of Users: </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input id="users" placeholder="10"></input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="length">Length of test (seconds): </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input id="length" placeholder="60"></input>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Stress!</button>
+        </section>
+    </main>
+</body>
+
+</html>

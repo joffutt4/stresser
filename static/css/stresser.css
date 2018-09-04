@@ -1,0 +1,33 @@
+body.fw-bg {
+  background-image: url(../img/stresser-bg.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stress-input {
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .stress-input {
+    float: right;
+    max-width: 50vw;
+    margin-right: 48px;
+    margin-top: 40px;
+  }
+  .stress-input .url-input {
+    width: 40vw;
+  }
+}
+
+.stress-input label {
+  font-size: 0.8em;
+  font-weight: 900;
+  margin-top: 0.5rem;
+}
+
+.stress-input h3 {
+  text-align: center;
+}
